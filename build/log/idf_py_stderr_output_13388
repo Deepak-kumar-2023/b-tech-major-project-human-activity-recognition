@@ -1,0 +1,11 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM3 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40379b6e: [0;33mrtc_brownout_isr_handler[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_system/port/brownout.c[0m[0m:[1;31m72[0m
+[0m--- 0x40379b6e: [0;33mrtc_brownout_isr_handler[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_system/port/brownout.c[0m[0m:[1;31m72[0m
+[0m--- 0x40379b6e: [0;33mrtc_brownout_isr_handler[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_system/port/brownout.c[0m[0m:[1;31m72[0m
+[0m--- 0x40379b6e: [0;33mrtc_brownout_isr_handler[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_system/port/brownout.c[0m[0m:[1;31m72[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m

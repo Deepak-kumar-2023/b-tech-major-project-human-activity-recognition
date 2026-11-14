@@ -1,0 +1,43 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM3 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4037d202: [0;33mesp_crosscore_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_system/crosscore_int.c[0m[0m:[1;31m73[0m
+[0m--- 0x4037bc75: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.4/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x42075f91: [0;33mdl::TensorBase::transpose(dl::TensorBase*, std::vector<int, std::allocator<int> >)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/tensor/src/dl_tensor_base.cpp[0m[0m:[1;31m996[0m
+[0m--- (inlined by) [0;33mdl::TensorBase* dl::TensorBase::transpose<signed char>(signed char*, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/tensor/src/dl_tensor_base.cpp[0m[0m:[1;31m1058[0m
+[0m--- (inlined by) [0;33mdl::TensorBase::transpose(dl::TensorBase*, std::vector<int, std::allocator<int> >)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/tensor/src/dl_tensor_base.cpp[0m[0m:[1;31m1085[0m
+[0m--- 0x4201b4ee: [0;33mdl::module::Transpose::forward(dl::ModelContext*, dl::runtime_mode_t)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/module/include/dl_module_transpose.hpp[0m[0m:[1;31m58[0m
+[0m--- 0x4200bf47: [0;33mdl::Model::run(dl::runtime_mode_t)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/model/src/dl_model_base.cpp[0m[0m:[1;31m578[0m
+[0m--- 0x4200bb92: [0;33mmodel_inference_task(void*)[0m[0m at [0;32mC:/ESP32_Fall_Detection/CSI_Fall_Detection/main/app_main.cpp[0m[0m:[1;31m347[0m
+[0m--- 0x4037d202: [0;33mesp_crosscore_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_system/crosscore_int.c[0m[0m:[1;31m73[0m
+[0m--- 0x4037bc75: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.4/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x42062651: [0;33mdl_tie728_dotprod_i8k8o16[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/base/isa/tie728/dl_tie728_dotprod.S[0m[0m:[1;31m27[0m
+[0m--- 0x42062211: [0;33mdl::base::dotprod(signed char*, signed char*, short*, int, int)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/base/dl_base_dotprod.cpp[0m[0m:[1;31m84[0m
+[0m--- (inlined by) [0;33mdl::base::dotprod(signed char*, signed char*, short*, int, int)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/base/dl_base_dotprod.cpp[0m[0m:[1;31m61[0m
+[0m--- 0x42026bd0: [0;33mvoid dl::base::mat_vec_dotprod<signed char, signed char, short>(signed char*, signed char*, short*, int, int, int)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/base/dl_base_dotprod.hpp[0m[0m:[1;31m41[0m
+[0m--- (inlined by) [0;33mvoid dl::module::LSTM::forward_template<signed char>(dl::ModelContext*, dl::runtime_mode_t)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/module/include/dl_module_lstm.hpp[0m[0m:[1;31m253[0m
+[0m--- (inlined by) [0;33mdl::module::LSTM::forward(dl::ModelContext*, dl::runtime_mode_t)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/module/include/dl_module_lstm.hpp[0m[0m:[1;31m117[0m
+[0m--- 0x4200bf47: [0;33mdl::Model::run(dl::runtime_mode_t)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/model/src/dl_model_base.cpp[0m[0m:[1;31m578[0m
+[0m--- 0x4200bb92: [0;33mmodel_inference_task(void*)[0m[0m at [0;32mC:/ESP32_Fall_Detection/CSI_Fall_Detection/main/app_main.cpp[0m[0m:[1;31m347[0m
+[0m--- 0x4037d202: [0;33mesp_crosscore_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_system/crosscore_int.c[0m[0m:[1;31m73[0m
+[0m--- 0x4037bc75: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.4/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x42062651: [0;33mdl_tie728_dotprod_i8k8o16[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/base/isa/tie728/dl_tie728_dotprod.S[0m[0m:[1;31m27[0m
+[0m--- 0x42062211: [0;33mdl::base::dotprod(signed char*, signed char*, short*, int, int)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/base/dl_base_dotprod.cpp[0m[0m:[1;31m84[0m
+[0m--- (inlined by) [0;33mdl::base::dotprod(signed char*, signed char*, short*, int, int)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/base/dl_base_dotprod.cpp[0m[0m:[1;31m61[0m
+[0m--- 0x42026bd0: [0;33mvoid dl::base::mat_vec_dotprod<signed char, signed char, short>(signed char*, signed char*, short*, int, int, int)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/base/dl_base_dotprod.hpp[0m[0m:[1;31m41[0m
+[0m--- (inlined by) [0;33mvoid dl::module::LSTM::forward_template<signed char>(dl::ModelContext*, dl::runtime_mode_t)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/module/include/dl_module_lstm.hpp[0m[0m:[1;31m253[0m
+[0m--- (inlined by) [0;33mdl::module::LSTM::forward(dl::ModelContext*, dl::runtime_mode_t)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/module/include/dl_module_lstm.hpp[0m[0m:[1;31m117[0m
+[0m--- 0x4200bf47: [0;33mdl::Model::run(dl::runtime_mode_t)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/model/src/dl_model_base.cpp[0m[0m:[1;31m578[0m
+[0m--- 0x4200bb92: [0;33mmodel_inference_task(void*)[0m[0m at [0;32mC:/ESP32_Fall_Detection/CSI_Fall_Detection/main/app_main.cpp[0m[0m:[1;31m347[0m
+[0m--- 0x4037d202: [0;33mesp_crosscore_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.4/components/esp_system/crosscore_int.c[0m[0m:[1;31m73[0m
+[0m--- 0x4037bc75: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.4/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x42062651: [0;33mdl_tie728_dotprod_i8k8o16[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/base/isa/tie728/dl_tie728_dotprod.S[0m[0m:[1;31m27[0m
+[0m--- 0x42062211: [0;33mdl::base::dotprod(signed char*, signed char*, short*, int, int)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/base/dl_base_dotprod.cpp[0m[0m:[1;31m84[0m
+[0m--- (inlined by) [0;33mdl::base::dotprod(signed char*, signed char*, short*, int, int)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/base/dl_base_dotprod.cpp[0m[0m:[1;31m61[0m
+[0m--- 0x42026bd0: [0;33mvoid dl::base::mat_vec_dotprod<signed char, signed char, short>(signed char*, signed char*, short*, int, int, int)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/base/dl_base_dotprod.hpp[0m[0m:[1;31m41[0m
+[0m--- (inlined by) [0;33mvoid dl::module::LSTM::forward_template<signed char>(dl::ModelContext*, dl::runtime_mode_t)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/module/include/dl_module_lstm.hpp[0m[0m:[1;31m253[0m
+[0m--- (inlined by) [0;33mdl::module::LSTM::forward(dl::ModelContext*, dl::runtime_mode_t)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/module/include/dl_module_lstm.hpp[0m[0m:[1;31m117[0m
+[0m--- 0x4200bf47: [0;33mdl::Model::run(dl::runtime_mode_t)[0m[0m at [0;32mC:/ESP32_Fall_Detection/esp-dl/esp-dl/dl/model/src/dl_model_base.cpp[0m[0m:[1;31m578[0m
+[0m--- 0x4200bb92: [0;33mmodel_inference_task(void*)[0m[0m at [0;32mC:/ESP32_Fall_Detection/CSI_Fall_Detection/main/app_main.cpp[0m[0m:[1;31m347[0m
+[0m

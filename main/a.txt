@@ -1,0 +1,86 @@
+
+`timescale 1ns/1ns
+
+module memory_parity_audit;
+
+    integer fd, status;
+    integer n, lanes;
+
+    reg [23:0] first [0:999];
+    reg [23:0] second [0:999];
+    reg [2:0] parity [0:999];
+
+    integer i, lane, b, hard;
+    reg p, q;
+    integer result;
+
+    initial begin
+
+        fd = $fopen("/dev/stdin", "r");
+
+        // Read first array
+        status = $fscanf(fd, "%d", n);
+
+        for (i = 0; i < n; i = i + 1)
+            status = $fscanf(fd, "%d", first[i]);
+
+        // Read second array
+        status = $fscanf(fd, "%d", n);
+
+        for (i = 0; i < n; i = i + 1)
+            status = $fscanf(fd, "%d", second[i]);
+
+        // Read parity array
+        status = $fscanf(fd, "%d", n);
+
+        for (i = 0; i < n; i = i + 1)
+            status = $fscanf(fd, "%d", parity[i]);
+
+        // Read number of lanes
+        status = $fscanf(fd, "%d", lanes);
+
+        // Main logic
+        result = 0;
+
+        for (i = 0; i < n; i = i + 1) begin
+
+            hard = 0;
+
+            for (lane = 0; lane < lanes; lane = lane + 1) begin
+
+                p = 0;
+                q = 0;
+
+                // Calculate parity for both reads
+                for (b = 0; b < 8; b = b + 1) begin
+
+                    p = p ^ first[i][lane * 8 + b];
+
+                    q = q ^ second[i][lane * 8 + b];
+
+                end
+
+                // Both reads must disagree with stored parity
+                if ((p != parity[i][lane]) &&
+                    (q != parity[i][lane])) begin
+
+                    hard = hard + 1;
+
+                end
+
+            end
+
+            // Two or more hard faults = uncorrectable
+            if (hard >= 2)
+                result = result + 1;
+
+        end
+
+        $display("%0d", result);
+
+        $fclose(fd);
+        $finish;
+
+    end
+
+endmodule

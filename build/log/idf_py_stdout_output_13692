@@ -1,0 +1,285 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x16d0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xec8
+load:0x403cb700,len:0x3160
+entry 0x403c8950
+[0;32mI (27) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Nov 10 2026 14:05:05[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.4[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (42) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 0000a000 00005000[0m
+[0;32mI (69) boot:  1 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c180020 size=27b5dch (2602460) map[0m
+[0;32mI (473) esp_image: segment 1: paddr=0028b604 vaddr=3fca1400 size=04a14h ( 18964) load[0m
+[0;32mI (476) esp_image: segment 2: paddr=00290020 vaddr=42000020 size=1742a0h (1524384) map[0m
+[0;32mI (703) esp_image: segment 3: paddr=004042c8 vaddr=3fca5e14 size=00c50h (  3152) load[0m
+[0;32mI (704) esp_image: segment 4: paddr=00404f20 vaddr=40378000 size=19384h (103300) load[0m
+[0;32mI (726) esp_image: segment 5: paddr=0041e2ac vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (736) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (736) boot: Disabling RNG early entropy source...[0m
+[0;32mI (747) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (747) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (747) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (752) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (757) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (762) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (767) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (773) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (779) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (785) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (791) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (797) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (801) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (806) esp_psram: Speed: 80MHz[0m
+[0;32mI (810) cpu_start: Multicore app[0m
+[0;32mI (1099) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1107) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1108) cpu_start: Pro cpu start user code[0m
+[0;32mI (1108) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (1113) app_init: Application information:[0m
+[0;32mI (1118) app_init: Project name:     model_in_flash_rodata[0m
+[0;32mI (1124) app_init: App version:      1[0m
+[0;32mI (1128) app_init: Compile time:     Nov 10 2026 14:42:33[0m
+[0;32mI (1134) app_init: ELF file SHA256:  57ffca261...[0m
+[0;32mI (1140) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1144) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1149) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1154) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1159) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1167) heap_init: At 3FCBD450 len 0002C2C0 (176 KiB): RAM[0m
+[0;32mI (1173) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1179) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1187) spi_flash: detected chip: boya[0m
+[0;32mI (1191) spi_flash: flash io: qio[0m
+[0;32mI (1195) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1202) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1210) main_task: Started on CPU0[0m
+[0;32mI (1230) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1230) main_task: Calling app_main()[0m
+[0;32mI (1230) CSI_FALL_DET: Starting ESP32-S3 Real-Time CSI Fall Detection System...[0m
+[0;32mI (1250) CSI_FALL_DET: Loading ESP-DL model on Core 1...[0m
+[0;32mI (1250) CSI_FALL_DET: Step 1: Keep environment static for 2 seconds (200 packets) for RF link calibration...[0m
+[0;32mI (1260) pp: pp rom version: e7ae62f[0m
+[0;32mI (1260) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1280) wifi:wifi driver task: 3fcdaf6c, prio:23, stack:6656, core=0[0m
+[0;32mI (1280) wifi:wifi firmware version: 8896d66[0m
+[0;32mI (1280) wifi:wifi certification version: v7.0[0m
+[0;32mI (1280) wifi:config NVS flash: enabled[0m
+[0;32mI (1280) wifi:config nano formatting: disabled[0m
+[0;32mI (1290) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1290) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1300) wifi:Init management short buffer num: 32[0m
+[0;32mI (1300) wifi:Init static tx buffer num: 16[0m
+[0;32mI (1310) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1310) wifi:Init static rx buffer size: 2212[0m
+[0;32mI (1310) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1320) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1320) wifi_init: rx ba win: 6[0m
+[0;32mI (1330) wifi_init: accept mbox: 6[0m
+[0;32mI (1330) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1330) wifi_init: udp mbox: 6[0m
+[0;32mI (1340) wifi_init: tcp mbox: 6[0m
+[0;32mI (1340) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1350) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1350) wifi_init: tcp mss: 1440[0m
+[0;32mI (1350) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1360) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1360) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1420) wifi:mode : sta (e8:f6:0a:89:e3:44)[0m
+[0;32mI (1420) wifi:enable tsf[0m
+[0;32mI (1420) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1420) CSI_FALL_DET: Wi-Fi started. Connecting...[0m
+[0;32mI (1420) CSI_FALL_DET: CSI reception enabled (LLTF=1, HTLTF=0, FILTER=1)![0m
+[0;32mI (1430) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1440) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1440) CSI_FALL_DET: System running! Waiting for first 100-packet CSI window...[0m
+[0;32mI (1450) main_task: Returned from app_main()[0m
+[0;32mI (1460) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1470) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1470) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (1490) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (1490) CSI_FALL_DET: Wi-Fi disconnected! Reason: 2, RSSI: -27[0m
+[0;32mI (1500) CSI_FALL_DET: Model loaded successfully![0m
+[0;32mI (1500) CSI_FALL_DET: Input shape    : [1, 52, 100, 1] (5200 elements) | exp: -5[0m
+[0;32mI (1500) CSI_FALL_DET: Output elements: 2 | exp: -4 (scale=0.06250)[0m
+[0;33mW (3890) CSI_FALL_DET: Wi-Fi disconnected! Reason: 205, RSSI: -128[0m
+[0;32mI (3900) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3900) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3920) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3930) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3970) wifi:connected with 12345678, aid = 1, channel 1, BW20, bssid = 22:1c:5c:47:bf:99[0m
+[0;32mI (3970) wifi:security: WPA2-PSK, phy: bgn, rssi: -27, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (3970) wifi:pm start, type: 0[0m
+
+[0;32mI (3970) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3980) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4030) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4030) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (5010) esp_netif_handlers: sta ip: 10.213.252.152, mask: 255.255.255.0, gw: 10.213.252.3[0m
+[0;32mI (5010) CSI_FALL_DET: Connected to hotspot![0m
+[0;32mI (5010) CSI_FALL_DET: IP address: 10.213.252.152 | Gateway: 10.213.252.3[0m
+[0;32mI (5180) wifi:<ba-add>idx:0 (ifx:0, 22:1c:5c:47:bf:99), tid:0, ssn:16, winSize:64[0m
+[0;32mI (7020) CSI_FALL_DET: ============================================[0m
+[0;32mI (7020) CSI_FALL_DET: RF Link & Subcarrier Calibration Complete![0m
+[0;32mI (7020) CSI_FALL_DET: Raw Static Mean : 13.329 (Target CSI-Bench Mean: 8.270)[0m
+[0;32mI (7030) CSI_FALL_DET: Link Gain Scale : 0.6204 (RSSI: -33 dBm)[0m
+[0;32mI (7040) CSI_FALL_DET: ============================================[0m
+[0;32mI (9030) CSI_FALL_DET: [CSI RX] Pkts: 200 | Rate: 99.5 Hz | RSSI: -30 dBm[0m
+[0;32mI (10990) CSI_FALL_DET: ============================================[0m
+[0;32mI (10990) CSI_FALL_DET: [Window #1] Inference time: 2953 ms | RSSI: -33 dBm[0m
+[0;32mI (10990) CSI_FALL_DET: Window CSI : Mean=8.27, SpatialStd=0.17, MotionTemporalStd=0.166, Min=7.62, Max=8.80 (clipped=0)[0m
+[0;32mI (11000) CSI_FALL_DET: Logits     : Fall=-2.0625 (q=-33) | Non-Fall=2.3125 (q=37)[0m
+[0;32mI (11010) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 1.2%)[0m
+[0;32mI (11020) CSI_FALL_DET: ============================================[0m
+[0;32mI (11030) CSI_FALL_DET: [CSI RX] Pkts: 400 | Rate: 100.0 Hz | RSSI: -34 dBm[0m
+[0;32mI (13030) CSI_FALL_DET: [CSI RX] Pkts: 600 | Rate: 100.0 Hz | RSSI: -33 dBm[0m
+[0;32mI (14000) CSI_FALL_DET: ============================================[0m
+[0;32mI (14000) CSI_FALL_DET: [Window #7] Inference time: 2951 ms | RSSI: -34 dBm[0m
+[0;32mI (14000) CSI_FALL_DET: Window CSI : Mean=8.26, SpatialStd=0.20, MotionTemporalStd=0.199, Min=7.30, Max=9.00 (clipped=0)[0m
+[0;32mI (14010) CSI_FALL_DET: Logits     : Fall=-2.1250 (q=-34) | Non-Fall=2.3750 (q=38)[0m
+[0;32mI (14020) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 1.1%)[0m
+[0;32mI (14030) CSI_FALL_DET: ============================================[0m
+[0;32mI (15030) CSI_FALL_DET: [CSI RX] Pkts: 800 | Rate: 99.9 Hz | RSSI: -33 dBm[0m
+[0;32mI (17000) CSI_FALL_DET: ============================================[0m
+[0;32mI (17000) CSI_FALL_DET: [Window #13] Inference time: 2951 ms | RSSI: -33 dBm[0m
+[0;32mI (17010) CSI_FALL_DET: Window CSI : Mean=8.29, SpatialStd=0.18, MotionTemporalStd=0.171, Min=7.58, Max=8.90 (clipped=0)[0m
+[0;32mI (17020) CSI_FALL_DET: Logits     : Fall=-2.0000 (q=-32) | Non-Fall=2.1875 (q=35)[0m
+[0;32mI (17030) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 1.5%)[0m
+[0;32mI (17030) CSI_FALL_DET: [CSI RX] Pkts: 1000 | Rate: 100.1 Hz | RSSI: -31 dBm[0m
+[0;32mI (17030) CSI_FALL_DET: ============================================[0m
+[0;32mI (19030) CSI_FALL_DET: [CSI RX] Pkts: 1200 | Rate: 99.9 Hz | RSSI: -33 dBm[0m
+[0;32mI (20030) CSI_FALL_DET: ============================================[0m
+[0;32mI (20030) CSI_FALL_DET: [Window #19] Inference time: 2953 ms | RSSI: -31 dBm[0m
+[0;32mI (20030) CSI_FALL_DET: Window CSI : Mean=8.27, SpatialStd=0.21, MotionTemporalStd=0.205, Min=7.53, Max=8.93 (clipped=0)[0m
+[0;32mI (20040) CSI_FALL_DET: Logits     : Fall=-2.2500 (q=-36) | Non-Fall=2.5625 (q=41)[0m
+[0;32mI (20050) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 0.8%)[0m
+[0;32mI (20060) CSI_FALL_DET: ============================================[0m
+[0;32mI (21030) CSI_FALL_DET: [CSI RX] Pkts: 1400 | Rate: 100.0 Hz | RSSI: -31 dBm[0m
+[0;32mI (23030) CSI_FALL_DET: [CSI RX] Pkts: 1600 | Rate: 99.9 Hz | RSSI: -32 dBm[0m
+[0;32mI (23040) CSI_FALL_DET: ============================================[0m
+[0;32mI (23040) CSI_FALL_DET: [Window #25] Inference time: 2952 ms | RSSI: -33 dBm[0m
+[0;32mI (23040) CSI_FALL_DET: Window CSI : Mean=8.33, SpatialStd=0.24, MotionTemporalStd=0.230, Min=7.50, Max=9.13 (clipped=0)[0m
+[0;32mI (23050) CSI_FALL_DET: Logits     : Fall=-2.0625 (q=-33) | Non-Fall=2.3125 (q=37)[0m
+[0;32mI (23060) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 1.2%)[0m
+[0;32mI (23070) CSI_FALL_DET: ============================================[0m
+[0;32mI (25030) CSI_FALL_DET: [CSI RX] Pkts: 1800 | Rate: 100.0 Hz | RSSI: -32 dBm[0m
+[0;32mI (26040) CSI_FALL_DET: ============================================[0m
+[0;32mI (26040) CSI_FALL_DET: [Window #31] Inference time: 2951 ms | RSSI: -32 dBm[0m
+[0;32mI (26050) CSI_FALL_DET: Window CSI : Mean=8.28, SpatialStd=0.22, MotionTemporalStd=0.218, Min=7.38, Max=9.02 (clipped=0)[0m
+[0;32mI (26060) CSI_FALL_DET: Logits     : Fall=-2.3125 (q=-37) | Non-Fall=2.6250 (q=42)[0m
+[0;32mI (26070) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 0.7%)[0m
+[0;32mI (26070) CSI_FALL_DET: ============================================[0m
+[0;32mI (27030) CSI_FALL_DET: [CSI RX] Pkts: 2000 | Rate: 100.1 Hz | RSSI: -31 dBm[0m
+[0;32mI (29030) CSI_FALL_DET: [CSI RX] Pkts: 2200 | Rate: 100.0 Hz | RSSI: -33 dBm[0m
+[0;32mI (29060) CSI_FALL_DET: ============================================[0m
+[0;32mI (29060) CSI_FALL_DET: [Window #37] Inference time: 2953 ms | RSSI: -33 dBm[0m
+[0;32mI (29060) CSI_FALL_DET: Window CSI : Mean=8.24, SpatialStd=0.18, MotionTemporalStd=0.174, Min=7.43, Max=8.88 (clipped=0)[0m
+[0;32mI (29070) CSI_FALL_DET: Logits     : Fall=-2.3125 (q=-37) | Non-Fall=2.6250 (q=42)[0m
+[0;32mI (29080) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 0.7%)[0m
+[0;32mI (29090) CSI_FALL_DET: ============================================[0m
+[0;32mI (31030) CSI_FALL_DET: [CSI RX] Pkts: 2400 | Rate: 99.9 Hz | RSSI: -32 dBm[0m
+[0;32mI (32070) CSI_FALL_DET: ============================================[0m
+[0;32mI (32070) CSI_FALL_DET: [Window #43] Inference time: 2951 ms | RSSI: -33 dBm[0m
+[0;32mI (32070) CSI_FALL_DET: Window CSI : Mean=8.26, SpatialStd=0.20, MotionTemporalStd=0.192, Min=7.42, Max=8.90 (clipped=0)[0m
+[0;32mI (32080) CSI_FALL_DET: Logits     : Fall=-2.1875 (q=-35) | Non-Fall=2.5000 (q=40)[0m
+[0;32mI (32090) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 0.9%)[0m
+[0;32mI (32100) CSI_FALL_DET: ============================================[0m
+[0;32mI (33030) CSI_FALL_DET: [CSI RX] Pkts: 2600 | Rate: 100.0 Hz | RSSI: -31 dBm[0m
+[0;32mI (35030) CSI_FALL_DET: [CSI RX] Pkts: 2800 | Rate: 99.9 Hz | RSSI: -34 dBm[0m
+[0;32mI (35080) CSI_FALL_DET: ============================================[0m
+[0;32mI (35080) CSI_FALL_DET: [Window #49] Inference time: 2952 ms | RSSI: -33 dBm[0m
+[0;32mI (35080) CSI_FALL_DET: Window CSI : Mean=8.25, SpatialStd=0.18, MotionTemporalStd=0.175, Min=7.64, Max=8.94 (clipped=0)[0m
+[0;32mI (35090) CSI_FALL_DET: Logits     : Fall=-2.3125 (q=-37) | Non-Fall=2.6250 (q=42)[0m
+[0;32mI (35100) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 0.7%)[0m
+[0;32mI (35110) CSI_FALL_DET: ============================================[0m
+[0;32mI (37030) CSI_FALL_DET: [CSI RX] Pkts: 3000 | Rate: 100.1 Hz | RSSI: -33 dBm[0m
+[0;32mI (38090) CSI_FALL_DET: ============================================[0m
+[0;32mI (38090) CSI_FALL_DET: [Window #55] Inference time: 2952 ms | RSSI: -34 dBm[0m
+[0;32mI (38090) CSI_FALL_DET: Window CSI : Mean=8.31, SpatialStd=0.23, MotionTemporalStd=0.223, Min=7.56, Max=9.12 (clipped=0)[0m
+[0;32mI (38100) CSI_FALL_DET: Logits     : Fall=-2.0000 (q=-32) | Non-Fall=2.2500 (q=36)[0m
+[0;32mI (38110) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 1.4%)[0m
+[0;32mI (38120) CSI_FALL_DET: ============================================[0m
+[0;32mI (39030) CSI_FALL_DET: [CSI RX] Pkts: 3200 | Rate: 100.0 Hz | RSSI: -32 dBm[0m
+[0;32mI (41030) CSI_FALL_DET: [CSI RX] Pkts: 3400 | Rate: 100.0 Hz | RSSI: -34 dBm[0m
+[0;32mI (41100) CSI_FALL_DET: ============================================[0m
+[0;32mI (41100) CSI_FALL_DET: [Window #61] Inference time: 2952 ms | RSSI: -33 dBm[0m
+[0;32mI (41100) CSI_FALL_DET: Window CSI : Mean=8.28, SpatialStd=0.21, MotionTemporalStd=0.205, Min=7.27, Max=8.93 (clipped=0)[0m
+[0;32mI (41110) CSI_FALL_DET: Logits     : Fall=-2.2500 (q=-36) | Non-Fall=2.5625 (q=41)[0m
+[0;32mI (41120) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 0.8%)[0m
+[0;32mI (41130) CSI_FALL_DET: ============================================[0m
+[0;32mI (43030) CSI_FALL_DET: [CSI RX] Pkts: 3600 | Rate: 100.0 Hz | RSSI: -34 dBm[0m
+[0;32mI (44110) CSI_FALL_DET: ============================================[0m
+[0;32mI (44110) CSI_FALL_DET: [Window #67] Inference time: 2952 ms | RSSI: -34 dBm[0m
+[0;32mI (44110) CSI_FALL_DET: Window CSI : Mean=8.22, SpatialStd=0.23, MotionTemporalStd=0.223, Min=7.41, Max=8.93 (clipped=0)[0m
+[0;32mI (44120) CSI_FALL_DET: Logits     : Fall=-2.0625 (q=-33) | Non-Fall=2.3125 (q=37)[0m
+[0;32mI (44130) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 1.2%)[0m
+[0;32mI (44140) CSI_FALL_DET: ============================================[0m
+[0;32mI (45030) CSI_FALL_DET: [CSI RX] Pkts: 3800 | Rate: 100.0 Hz | RSSI: -32 dBm[0m
+[0;32mI (47030) CSI_FALL_DET: [CSI RX] Pkts: 4000 | Rate: 100.0 Hz | RSSI: -33 dBm[0m
+[0;32mI (47120) CSI_FALL_DET: ============================================[0m
+[0;32mI (47120) CSI_FALL_DET: [Window #73] Inference time: 2953 ms | RSSI: -34 dBm[0m
+[0;32mI (47120) CSI_FALL_DET: Window CSI : Mean=8.27, SpatialStd=0.22, MotionTemporalStd=0.209, Min=7.16, Max=9.32 (clipped=0)[0m
+[0;32mI (47130) CSI_FALL_DET: Logits     : Fall=-2.0000 (q=-32) | Non-Fall=2.2500 (q=36)[0m
+[0;32mI (47140) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 1.4%)[0m
+[0;32mI (47150) CSI_FALL_DET: ============================================[0m
+[0;32mI (49030) CSI_FALL_DET: [CSI RX] Pkts: 4200 | Rate: 100.0 Hz | RSSI: -32 dBm[0m
+[0;32mI (50130) CSI_FALL_DET: ============================================[0m
+[0;32mI (50130) CSI_FALL_DET: [Window #79] Inference time: 2951 ms | RSSI: -33 dBm[0m
+[0;32mI (50130) CSI_FALL_DET: Window CSI : Mean=8.26, SpatialStd=0.23, MotionTemporalStd=0.213, Min=7.38, Max=9.47 (clipped=0)[0m
+[0;32mI (50140) CSI_FALL_DET: Logits     : Fall=-2.0625 (q=-33) | Non-Fall=2.3125 (q=37)[0m
+[0;32mI (50150) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 1.2%)[0m
+[0;32mI (50160) CSI_FALL_DET: ============================================[0m
+[0;32mI (51030) CSI_FALL_DET: [CSI RX] Pkts: 4400 | Rate: 99.8 Hz | RSSI: -31 dBm[0m
+[0;32mI (53030) CSI_FALL_DET: [CSI RX] Pkts: 4600 | Rate: 100.1 Hz | RSSI: -33 dBm[0m
+[0;32mI (53140) CSI_FALL_DET: ============================================[0m
+[0;32mI (53140) CSI_FALL_DET: [Window #85] Inference time: 2953 ms | RSSI: -33 dBm[0m
+[0;32mI (53140) CSI_FALL_DET: Window CSI : Mean=8.31, SpatialStd=0.22, MotionTemporalStd=0.214, Min=7.47, Max=9.18 (clipped=0)[0m
+[0;32mI (53150) CSI_FALL_DET: Logits     : Fall=-2.2500 (q=-36) | Non-Fall=2.5625 (q=41)[0m
+[0;32mI (53160) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 0.8%)[0m
+[0;32mI (53170) CSI_FALL_DET: ============================================[0m
+[0;32mI (55030) CSI_FALL_DET: [CSI RX] Pkts: 4800 | Rate: 100.0 Hz | RSSI: -31 dBm[0m
+[0;32mI (56140) CSI_FALL_DET: ============================================[0m
+[0;32mI (56140) CSI_FALL_DET: [Window #91] Inference time: 2950 ms | RSSI: -33 dBm[0m
+[0;32mI (56150) CSI_FALL_DET: Window CSI : Mean=8.23, SpatialStd=0.19, MotionTemporalStd=0.182, Min=7.56, Max=8.96 (clipped=0)[0m
+[0;32mI (56160) CSI_FALL_DET: Logits     : Fall=-2.1250 (q=-34) | Non-Fall=2.3750 (q=38)[0m
+[0;32mI (56170) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 1.1%)[0m
+[0;32mI (56170) CSI_FALL_DET: ============================================[0m
+[0;32mI (57030) CSI_FALL_DET: [CSI RX] Pkts: 5000 | Rate: 100.0 Hz | RSSI: -32 dBm[0m
+[0;32mI (59030) CSI_FALL_DET: [CSI RX] Pkts: 5200 | Rate: 100.0 Hz | RSSI: -33 dBm[0m
+[0;32mI (59150) CSI_FALL_DET: ============================================[0m
+[0;32mI (59150) CSI_FALL_DET: [Window #97] Inference time: 2951 ms | RSSI: -32 dBm[0m
+[0;32mI (59160) CSI_FALL_DET: Window CSI : Mean=8.29, SpatialStd=0.21, MotionTemporalStd=0.204, Min=7.47, Max=9.05 (clipped=0)[0m
+[0;32mI (59170) CSI_FALL_DET: Logits     : Fall=-2.3125 (q=-37) | Non-Fall=2.6250 (q=42)[0m
+[0;32mI (59180) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 0.7%)[0m
+[0;32mI (59180) CSI_FALL_DET: ============================================[0m
+[0;32mI (61030) CSI_FALL_DET: [CSI RX] Pkts: 5400 | Rate: 100.0 Hz | RSSI: -30 dBm[0m
+[0;32mI (62170) CSI_FALL_DET: ============================================[0m
+[0;32mI (62170) CSI_FALL_DET: [Window #103] Inference time: 2952 ms | RSSI: -33 dBm[0m
+[0;32mI (62170) CSI_FALL_DET: Window CSI : Mean=8.25, SpatialStd=0.19, MotionTemporalStd=0.186, Min=7.59, Max=8.91 (clipped=0)[0m
+[0;32mI (62180) CSI_FALL_DET: Logits     : Fall=-1.9375 (q=-31) | Non-Fall=2.1875 (q=35)[0m
+[0;32mI (62190) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 1.6%)[0m
+[0;32mI (62200) CSI_FALL_DET: ============================================[0m
+[0;32mI (63030) CSI_FALL_DET: [CSI RX] Pkts: 5600 | Rate: 100.1 Hz | RSSI: -35 dBm[0m
+[0;32mI (65030) CSI_FALL_DET: [CSI RX] Pkts: 5800 | Rate: 99.9 Hz | RSSI: -33 dBm[0m
+[0;32mI (65180) CSI_FALL_DET: ============================================[0m
+[0;32mI (65180) CSI_FALL_DET: [Window #109] Inference time: 2952 ms | RSSI: -33 dBm[0m
+[0;32mI (65180) CSI_FALL_DET: Window CSI : Mean=8.30, SpatialStd=0.20, MotionTemporalStd=0.196, Min=7.64, Max=8.98 (clipped=0)[0m
+[0;32mI (65190) CSI_FALL_DET: Logits     : Fall=-2.1875 (q=-35) | Non-Fall=2.5000 (q=40)[0m
+[0;32mI (65200) CSI_FALL_DET: Result     : NON-FALL (Fall Prob: 0.9%)[0m
+[0;32mI (65210) CSI_FALL_DET: ============================================[0m
+[0;32mI (67030) CSI_FALL_DET: [CSI RX] Pkts: 6000 | Rate: 100.1 Hz | RSSI: -33 dBm[0m

@@ -1,0 +1,2 @@
+source C:/ESP32_Fall_Detection/CSI_Fall_Detection/build/bootloader/gdbinit/symbols
+source C:/ESP32_Fall_Detection/CSI_Fall_Detection/build/bootloader/gdbinit/connect

@@ -1,0 +1,236 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x16d0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xec8
+load:0x403cb700,len:0x3160
+entry 0x403c8950
+[0;32mI (27) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Nov 10 2026 14:05:05[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.4[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (42) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 0000a000 00005000[0m
+[0;32mI (69) boot:  1 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c080020 size=200c4h (131268) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=000300ec vaddr=3fc9e700 size=05644h ( 22084) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=00035738 vaddr=40378000 size=0a8e0h ( 43232) load[0m
+[0;32mI (119) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=7e74ch (517964) map[0m
+[0;32mI (196) esp_image: segment 4: paddr=000be774 vaddr=403828e0 size=0bdd4h ( 48596) load[0m
+[0;32mI (205) esp_image: segment 5: paddr=000ca550 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (214) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (215) boot: Disabling RNG early entropy source...[0m
+[0;32mI (225) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (225) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (225) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (230) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (235) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (240) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (245) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (251) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (257) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (262) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (269) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (274) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (279) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (284) esp_psram: Speed: 80MHz[0m
+[0;32mI (288) cpu_start: Multicore app[0m
+[0;32mI (577) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (585) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (586) cpu_start: Pro cpu start user code[0m
+[0;32mI (586) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (590) app_init: Application information:[0m
+[0;32mI (595) app_init: Project name:     model_in_flash_rodata[0m
+[0;32mI (601) app_init: App version:      1[0m
+[0;32mI (605) app_init: Compile time:     Nov 10 2026 14:42:33[0m
+[0;32mI (611) app_init: ELF file SHA256:  327d11ca1...[0m
+[0;32mI (617) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (622) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (626) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (631) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (636) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (643) heap_init: At 3FCA7A38 len 00041CD8 (263 KiB): RAM[0m
+[0;32mI (649) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (656) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (663) spi_flash: detected chip: boya[0m
+[0;32mI (667) spi_flash: flash io: qio[0m
+[0;32mI (671) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (679) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (686) main_task: Started on CPU0[0m
+[0;32mI (706) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (706) main_task: Calling app_main()[0m
+[0;32mI (706) CSI_RECEIVER: Starting ESP32-S3 CSI receiver...[0m
+[0;32mI (726) pp: pp rom version: e7ae62f[0m
+[0;32mI (726) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (736) wifi:wifi driver task: 3fcbb428, prio:23, stack:6656, core=0[0m
+[0;32mI (736) wifi:wifi firmware version: 8896d66[0m
+[0;32mI (736) wifi:wifi certification version: v7.0[0m
+[0;32mI (736) wifi:config NVS flash: enabled[0m
+[0;32mI (746) wifi:config nano formatting: disabled[0m
+[0;32mI (746) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (746) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (756) wifi:Init management short buffer num: 32[0m
+[0;32mI (756) wifi:Init static tx buffer num: 16[0m
+[0;32mI (766) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (766) wifi:Init static rx buffer size: 2212[0m
+[0;32mI (776) wifi:Init static rx buffer num: 10[0m
+[0;32mI (776) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (776) wifi_init: rx ba win: 6[0m
+[0;32mI (786) wifi_init: accept mbox: 6[0m
+[0;32mI (786) wifi_init: tcpip mbox: 32[0m
+[0;32mI (786) wifi_init: udp mbox: 6[0m
+[0;32mI (796) wifi_init: tcp mbox: 6[0m
+[0;32mI (796) wifi_init: tcp tx win: 5760[0m
+[0;32mI (806) wifi_init: tcp rx win: 5760[0m
+[0;32mI (806) wifi_init: tcp mss: 1440[0m
+[0;32mI (806) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (816) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (816) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (866) wifi:mode : sta (e8:f6:0a:89:e3:44)[0m
+[0;32mI (866) wifi:enable tsf[0m
+[0;32mI (866) CSI_RECEIVER: Wi-Fi started. Connecting...[0m
+[0;32mI (866) CSI_RECEIVER: CSI reception enabled![0m
+[0;32mI (876) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (876) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (886) CSI_RECEIVER: Waiting for Wi-Fi CSI packets...[0m
+[0;32mI (886) main_task: Returned from app_main()[0m
+[0;32mI (886) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (906) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (916) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (926) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (926) CSI_RECEIVER: Wi-Fi disconnected! Reason: 2, RSSI: -33[0m
+[0;33mW (3326) CSI_RECEIVER: Wi-Fi disconnected! Reason: 205, RSSI: -128[0m
+[0;32mI (3336) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3336) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3346) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3346) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3366) wifi:connected with 12345678, aid = 1, channel 1, BW20, bssid = 22:1c:5c:47:bf:99[0m
+[0;32mI (3366) wifi:security: WPA2-PSK, phy: bgn, rssi: -33, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (3376) wifi:pm start, type: 1[0m
+
+[0;32mI (3376) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3386) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3406) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3406) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4416) esp_netif_handlers: sta ip: 10.213.252.152, mask: 255.255.255.0, gw: 10.213.252.3[0m
+[0;32mI (4416) CSI_RECEIVER: Connected to hotspot![0m
+[0;32mI (4416) CSI_RECEIVER: IP address: 10.213.252.152[0m
+[0;32mI (8426) CSI_RECEIVER: CSI META: RSSI=-40, sig_mode=1, BW=0, STBC=0, channel=1, secondary=0, first_word_invalid=0, len=128[0m
+[0;32mI (9456) CSI_RECEIVER: CSI META: RSSI=-40, sig_mode=1, BW=0, STBC=0, channel=1, secondary=0, first_word_invalid=0, len=128[0m
+[0;32mI (10476) CSI_RECEIVER: CSI META: RSSI=-41, sig_mode=1, BW=0, STBC=0, channel=1, secondary=0, first_word_invalid=0, len=128[0m
+[0;32mI (11546) CSI_RECEIVER: CSI META: RSSI=-41, sig_mode=1, BW=0, STBC=0, channel=1, secondary=0, first_word_invalid=0, len=128[0m
+[0;32mI (12316) CSI_RECEIVER: CSI META: RSSI=-41, sig_mode=1, BW=0, STBC=0, channel=1, secondary=0, first_word_invalid=0, len=128[0m
+[0;32mI (18466) wifi:<ba-add>idx:0 (ifx:0, 22:1c:5c:47:bf:99), tid:0, ssn:16, winSize:64[0m
+[0;32mI (27676) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (27676) CSI_RECEIVER: CSI packet count : 20[0m
+[0;32mI (27676) CSI_RECEIVER: RSSI             : -40 dBm[0m
+[0;32mI (27686) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (27696) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 58.31 66.85 65.46 64.66 62.97 60.75 61.29 59.08 58.60 57.20 58.60 57.01 57.63 58.14 55.44 56.73 54.04 53.26 54.20 51.61 52.43 51.04 49.93 47.17 46.14 46.96 44.72 44.38 0.00 0.00 0.00 0.00 0.00 0.00 0.00 30.41 32.65 33.42 32.80 34.41 36.06 38.08 39.96 40.31 41.18 43.83 43.83 45.18 44.28 46.10 47.42 47.42 46.96 49.65 51.48 52.84 53.71 54.38 57.98 58.83 60.54 62.27 66.37 
+[0;32mI (47956) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (47956) CSI_RECEIVER: CSI packet count : 40[0m
+[0;32mI (47956) CSI_RECEIVER: RSSI             : -44 dBm[0m
+[0;32mI (47956) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (47966) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 60.80 66.22 64.20 63.01 61.40 59.20 59.82 58.26 58.90 57.49 55.97 56.64 55.87 57.28 56.59 55.87 55.87 53.76 53.81 53.91 52.50 52.63 49.20 46.62 46.87 48.02 46.65 47.41 0.00 0.00 0.00 0.00 0.00 0.00 0.00 27.66 29.00 27.66 29.83 31.24 33.42 34.41 35.23 36.89 38.59 39.96 41.68 42.06 44.78 43.91 46.14 46.65 46.32 48.02 48.55 51.04 51.87 54.20 56.40 57.01 59.20 62.80 64.64 
+[0;32mI (68436) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (68436) CSI_RECEIVER: CSI packet count : 60[0m
+[0;32mI (68436) CSI_RECEIVER: RSSI             : -38 dBm[0m
+[0;32mI (68436) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (68446) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 30.07 34.23 32.25 32.06 31.14 30.27 30.27 29.43 29.61 29.61 29.43 28.64 28.64 27.89 28.86 27.66 28.86 26.68 27.66 27.46 26.48 26.31 25.32 24.19 24.08 23.02 24.02 23.09 0.00 0.00 0.00 0.00 0.00 0.00 0.00 16.76 16.49 17.46 17.26 18.25 19.10 21.02 21.02 21.02 22.02 23.00 23.00 24.02 24.08 24.08 24.08 24.02 25.00 25.00 27.02 27.02 28.02 28.07 30.15 30.07 31.02 32.02 33.02 
+[0;32mI (83656) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (83656) CSI_RECEIVER: CSI packet count : 80[0m
+[0;32mI (83656) CSI_RECEIVER: RSSI             : -38 dBm[0m
+[0;32mI (83656) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (83666) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 57.20 65.51 62.43 63.25 61.59 58.83 59.17 57.45 56.82 57.31 56.36 56.36 55.95 55.04 55.90 55.47 55.01 52.77 53.24 52.48 52.48 50.77 49.93 46.87 45.80 45.61 46.23 44.55 0.00 0.00 0.00 0.00 0.00 0.00 0.00 30.81 31.02 31.38 32.65 35.85 36.72 38.59 38.28 40.80 40.22 42.64 43.60 44.05 45.45 46.23 47.63 46.23 47.63 47.80 49.41 50.48 52.43 53.54 56.30 56.60 59.91 62.68 65.22 
+[0;32mI (103876) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (103876) CSI_RECEIVER: CSI packet count : 100[0m
+[0;32mI (103876) CSI_RECEIVER: RSSI             : -41 dBm[0m
+[0;32mI (103886) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (103886) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 31.32 34.21 32.28 32.28 31.32 30.08 31.05 30.08 29.61 29.61 29.61 29.43 29.43 28.28 29.43 29.43 28.28 28.44 28.44 27.66 27.66 26.93 25.96 25.00 24.35 23.41 25.08 23.71 0.00 0.00 0.00 0.00 0.00 0.00 0.00 17.03 17.26 17.46 17.72 18.68 18.97 20.25 20.62 21.54 22.47 22.85 23.77 23.26 24.17 23.71 24.60 24.17 25.08 25.08 26.00 26.57 26.57 28.16 29.41 30.36 30.36 31.62 32.89 
+[0;32mI (124346) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (124346) CSI_RECEIVER: CSI packet count : 120[0m
+[0;32mI (124346) CSI_RECEIVER: RSSI             : -40 dBm[0m
+[0;32mI (124356) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (124356) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 59.08 65.19 64.66 62.68 61.85 59.36 58.31 56.08 56.44 55.95 55.47 54.59 54.12 55.01 53.67 55.46 52.77 51.88 51.88 50.61 50.12 48.55 46.87 44.65 43.83 43.01 43.42 43.19 0.00 0.00 0.00 0.00 0.00 0.00 0.00 32.28 33.62 34.44 35.36 36.72 40.82 39.66 43.27 41.62 44.20 45.00 46.23 47.63 47.51 47.51 48.17 48.27 49.82 50.61 51.40 53.01 53.01 54.64 57.69 57.69 59.91 64.07 66.03 
+[0;32mI (148316) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (148316) CSI_RECEIVER: CSI packet count : 140[0m
+[0;32mI (148316) CSI_RECEIVER: RSSI             : -39 dBm[0m
+[0;32mI (148316) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (148326) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 58.41 64.07 60.75 61.61 59.08 56.04 56.86 55.76 55.23 54.71 54.12 53.67 53.23 53.71 54.56 53.67 52.77 50.54 51.48 49.40 49.74 49.09 46.87 44.94 43.83 42.80 43.28 42.43 0.00 0.00 0.00 0.00 0.00 0.00 0.00 30.36 31.38 33.11 33.62 36.36 36.06 38.60 38.60 39.82 42.64 43.19 46.10 45.45 44.69 46.75 47.42 46.75 48.17 48.92 50.61 49.20 51.22 52.80 55.80 56.61 58.25 61.85 65.46 
+[0;32mI (168796) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (168796) CSI_RECEIVER: CSI packet count : 160[0m
+[0;32mI (168796) CSI_RECEIVER: RSSI             : -40 dBm[0m
+[0;32mI (168796) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (168806) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 63.13 63.25 63.25 60.44 60.61 58.41 57.01 55.61 55.80 53.60 53.82 53.54 53.00 53.54 51.31 52.70 51.31 52.43 50.00 50.00 49.04 46.86 44.69 43.93 43.14 41.04 41.04 41.40 0.00 0.00 0.00 0.00 0.00 0.00 0.00 36.40 37.95 37.16 37.58 38.95 42.19 42.72 43.83 45.00 45.80 46.86 48.92 48.92 49.58 50.25 50.99 52.40 50.99 52.40 51.74 54.04 54.67 57.01 58.41 58.41 60.80 61.40 63.41 
+[0;32mI (189066) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (189066) CSI_RECEIVER: CSI packet count : 180[0m
+[0;32mI (189066) CSI_RECEIVER: RSSI             : -40 dBm[0m
+[0;32mI (189076) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (189076) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 30.02 32.06 30.07 30.02 29.07 29.02 28.07 28.07 27.17 26.17 26.31 26.31 26.31 26.48 26.31 25.50 25.32 24.19 24.19 24.08 23.02 22.02 22.02 21.02 20.00 20.02 21.10 20.22 0.00 0.00 0.00 0.00 0.00 0.00 0.00 15.81 16.76 16.49 17.26 18.11 19.10 20.02 20.02 21.00 21.00 22.02 23.02 24.02 23.09 24.08 23.09 24.08 25.02 25.02 25.00 26.00 27.00 26.00 28.02 28.02 30.02 31.02 32.02 
+[0;32mI (209346) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (209346) CSI_RECEIVER: CSI packet count : 200[0m
+[0;32mI (209346) CSI_RECEIVER: RSSI             : -39 dBm[0m
+[0;32mI (209346) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (209356) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 63.91 62.30 62.63 61.98 60.08 58.82 56.61 56.04 55.08 54.12 52.63 52.39 53.37 54.34 51.20 51.42 51.42 49.24 49.73 48.76 46.17 47.13 44.27 43.66 42.15 40.72 40.25 39.82 0.00 0.00 0.00 0.00 0.00 0.00 0.00 35.00 35.23 35.51 37.66 39.05 40.52 42.45 41.76 43.32 44.01 46.62 46.10 47.42 49.19 50.57 50.09 49.66 50.16 52.39 53.31 52.55 54.42 55.36 58.19 60.08 61.35 63.25 64.51 
+[0;32mI (229616) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (229616) CSI_RECEIVER: CSI packet count : 220[0m
+[0;32mI (229616) CSI_RECEIVER: RSSI             : -39 dBm[0m
+[0;32mI (229626) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (229626) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 31.91 31.38 31.38 30.53 30.23 28.84 28.84 28.02 28.60 28.02 27.20 27.80 27.80 27.80 27.20 27.80 27.20 26.40 26.40 25.81 25.81 25.24 23.32 22.83 22.83 22.36 21.93 21.19 0.00 0.00 0.00 0.00 0.00 0.00 0.00 15.81 15.62 15.56 16.28 17.80 17.80 18.60 18.87 20.25 21.10 21.47 21.95 22.36 22.83 22.83 23.71 23.71 23.71 24.19 25.06 25.55 25.55 27.46 28.30 28.84 29.68 31.06 31.91 
+[0;32mI (249896) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (249896) CSI_RECEIVER: CSI packet count : 240[0m
+[0;32mI (249896) CSI_RECEIVER: RSSI             : -52 dBm[0m
+[0;32mI (249896) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (249906) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 31.95 31.95 31.62 31.95 31.62 30.36 30.36 30.08 28.86 29.12 28.16 27.89 27.89 28.64 27.46 28.44 28.64 27.66 27.66 26.68 26.25 25.96 24.35 23.77 22.85 22.85 23.26 23.32 0.00 0.00 0.00 0.00 0.00 0.00 0.00 16.03 16.12 16.28 17.26 17.46 18.68 20.62 19.92 20.88 21.19 21.54 22.85 23.26 23.71 24.60 24.60 24.60 25.08 26.00 26.00 26.57 27.51 28.46 29.41 30.08 31.95 31.02 32.31 
+[0;32mI (270166) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (270166) CSI_RECEIVER: CSI packet count : 260[0m
+[0;32mI (270166) CSI_RECEIVER: RSSI             : -53 dBm[0m
+[0;32mI (270176) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (270186) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 62.77 63.29 61.06 61.06 56.60 57.14 54.64 53.60 52.80 53.01 51.40 51.09 48.92 50.99 51.86 48.27 50.99 47.51 48.92 47.51 46.86 47.01 44.82 43.60 42.44 40.50 43.05 42.06 0.00 0.00 0.00 0.00 0.00 0.00 0.00 39.05 39.60 39.70 39.05 42.20 44.41 45.22 44.94 48.02 47.51 48.76 51.43 52.39 51.89 51.89 51.48 51.43 53.71 53.67 53.67 54.12 55.07 56.08 58.31 60.21 60.21 63.81 61.91 
+[0;32mI (290446) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (290446) CSI_RECEIVER: CSI packet count : 280[0m
+[0;32mI (290446) CSI_RECEIVER: RSSI             : -53 dBm[0m
+[0;32mI (290456) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (290456) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 32.02 31.78 32.02 30.81 29.83 29.61 28.64 28.44 28.44 27.46 27.29 27.17 27.07 27.17 26.17 27.17 25.18 25.18 24.33 24.33 23.35 23.54 21.59 21.59 20.62 19.92 19.92 19.31 0.00 0.00 0.00 0.00 0.00 0.00 0.00 18.03 18.03 18.11 18.25 19.24 20.40 20.62 21.84 21.84 23.09 22.47 24.35 24.35 24.70 25.30 25.63 25.63 25.30 26.25 26.25 27.20 27.20 28.86 29.12 29.83 31.78 31.78 32.02 
+[0;32mI (310926) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (310926) CSI_RECEIVER: CSI packet count : 300[0m
+[0;32mI (310926) CSI_RECEIVER: RSSI             : -47 dBm[0m
+[0;32mI (310936) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (310936) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 59.06 64.40 64.40 60.42 60.37 56.86 55.04 52.39 53.49 53.23 51.48 50.70 51.62 49.98 48.10 49.65 47.76 48.70 47.43 46.82 44.38 43.08 40.72 40.71 38.48 38.01 36.36 38.01 0.00 0.00 0.00 0.00 0.00 0.00 0.00 37.34 38.64 39.56 41.44 42.06 42.72 43.08 48.33 47.85 50.09 51.48 50.61 52.70 53.54 52.70 53.25 54.08 53.54 53.34 55.57 57.71 56.80 57.27 60.37 58.59 61.29 64.50 67.74 
+[0;32mI (330176) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (330176) CSI_RECEIVER: CSI packet count : 320[0m
+[0;32mI (330176) CSI_RECEIVER: RSSI             : -48 dBm[0m
+[0;32mI (330186) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (330186) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 29.07 33.54 31.30 30.87 30.41 29.55 29.55 28.64 26.93 27.51 26.57 26.93 25.00 25.00 26.25 25.30 26.25 24.70 24.70 23.41 23.77 23.26 22.36 20.59 21.95 20.25 20.25 20.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 16.28 17.46 16.76 17.09 18.38 19.70 21.93 20.62 22.36 21.93 22.36 24.70 24.19 24.70 23.85 25.24 23.85 25.55 25.06 26.42 26.42 26.83 28.18 29.07 29.97 31.30 32.20 32.20 
+[0;32mI (350456) CSI_RECEIVER: ----------------------------[0m
+[0;32mI (350456) CSI_RECEIVER: CSI packet count : 340[0m
+[0;32mI (350456) CSI_RECEIVER: RSSI             : -46 dBm[0m
+[0;32mI (350466) CSI_RECEIVER: Original CSI len : 128 bytes[0m
+[0;32mI (350466) CSI_RECEIVER: Copied CSI len   : 128 bytes[0m
+CSI amplitudes: 0.00 59.67 66.07 64.66 59.55 58.80 57.01 57.01 55.00 56.04 56.04 53.54 53.54 52.48 52.48 51.62 51.11 51.48 50.77 49.09 48.26 48.26 46.62 45.22 43.60 42.64 41.23 42.52 41.04 0.00 0.00 0.00 0.00 0.00 0.00 0.00 32.70 36.24 36.89 36.06 39.41 40.00 41.23 43.19 45.34 47.38 47.38 49.52 51.66 49.58 48.84 50.25 50.25 50.93 51.62 55.15 53.04 54.45 55.32 58.05 58.80 60.31 62.29 62.24 

@@ -1,0 +1,2 @@
+source C:/ESP32_Fall_Detection/CSI_Fall_Detection/build/gdbinit/symbols
+source C:/ESP32_Fall_Detection/CSI_Fall_Detection/build/gdbinit/connect
